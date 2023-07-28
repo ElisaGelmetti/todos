@@ -30,7 +30,10 @@ export class TodoComponent {
   editTask(todo: Todo) {
     this.newTodo = todo;
   }
-
+  delete(todo: Todo) {
+    this.todoSvc.delete(todo);
+    this.todos = this.todos.filter((t) => todo.title != t.title);
+  }
   checkTask(todo: Todo, i: number) {
     this.check[i] = todo.completed;
     todo.completed = todo.completed === true ? false : true;
