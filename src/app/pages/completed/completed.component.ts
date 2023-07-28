@@ -18,6 +18,6 @@ export class CompletedComponent {
 
   delete(todo: Todo) {
     this.todoSvc.delete(todo);
-    this.todos = this.todos.filter((el) => todo.title != el.title);
+    this.todos = this.todos.filter((t) => todo.title != t.title);
   }
 }

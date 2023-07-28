@@ -5,6 +5,7 @@
       <a routerLink="/todo">Crea una nuova task</a>
     </div>
   </div>
+  <button class="button-delate" (click)="(delete)">Elimina</button>
   <div class="pl">
     <div class="pl__outer-ring"></div>
     <div class="pl__inner-ring"></div>
@@ -19,7 +20,7 @@
   <ul>
     <li *ngFor="let todo of todos">
       {{ todo.title }}
-      <button (click)="delete(todo)">-</button>
+      <button (click)="delete(todo)">ELIMINA</button>
     </li>
   </ul>
 </main>
