@@ -1,0 +1,12 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 3em;
+}
+
+li {
+  border: 0.2em solid purple;
+  border-radius: 12px 12px 12px 12px;
+  padding: 3px;
+}
